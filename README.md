@@ -46,3 +46,9 @@ status:Object:=Set Metadata(file:Text; tags:Object)
 |file|Text||
 |tags|Object|KVP; value may be Text, Null or numerial (`#` added internally). to support 4D version < 19 R2, implementation does not use `4D.Blob` object capsule.|
 |status|Object||
+
+to pass binary data, convert it to `Picture` using the custom UTI:
+
+```4d
+BLOB TO PICTURE($BLOB; $PICT; "private.exiftool.data")
+```
