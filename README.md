@@ -52,3 +52,7 @@ to pass binary data, convert it to `Picture` using the custom UTI:
 ```4d
 BLOB TO PICTURE($BLOB; $PICT; "private.exiftool.data")
 ```
+
+---
+
+generic low level commands (`Command` `GetOutput`) are not implemented for now.
