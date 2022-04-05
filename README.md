@@ -23,7 +23,7 @@ design:
 
 
 ```4d
-status:Object:=Set Metadata(file:Text; opts:Collection; {timeout:Real})
+status:Object:=Set Metadata(file:Text; tags:Object; {timeout:Real})
 ```
 
 |parameter|data type|description|
