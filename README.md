@@ -14,7 +14,7 @@ design:
 
 * internally create a single stay-open `ExifTool` object
 
-## SCARD Get readers
+## ExifTool ImageInfo
 
 ```4d
 tagInfo:Object:=ExifTool ImageInfo(file:Text{; opts:Collection; {timeout:Real}})
