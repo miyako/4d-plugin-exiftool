@@ -25,8 +25,7 @@ status:Object:=Get Metadata(file:Text{; opts:Text})
 |parameter|data type|description|
 |-|-|-|
 |file|Text||
-|opts|Text|only the following exiftool options are allowed: 
-`-TAG` `-x` `-b` `-c` `-charset` `-d` `-L` `-lang` `-listItem` `-n` `-sep` `-sort` `--a` `-e` `-ee` `-ext` `-F` `-fast` `-fileOrder` `-i` `-if` `-m` `-password` `-r` `-scanForXMP` `-u` `-U` `-z` `-globalTimeShift` `-use` `-@` `-api`|
+|opts|Text|only the following exiftool options are allowed: `-TAG` `-x` `-b` `-c` `-charset` `-d` `-L` `-lang` `-listItem` `-n` `-sep` `-sort` `--a` `-e` `-ee` `-ext` `-F` `-fast` `-fileOrder` `-i` `-if` `-m` `-password` `-r` `-scanForXMP` `-u` `-U` `-z` `-globalTimeShift` `-use` `-@` `-api`|
 |status|Object||
 
 ## ExifTool Set Metadata
