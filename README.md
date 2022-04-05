@@ -17,7 +17,7 @@ design:
 ## SCARD Get readers
 
 ```4d
-status:Object:=ExifTool ImageInfo(file:Text{; opts:Collection; {timeout:Real}})
+tagInfo:Object:=ExifTool ImageInfo(file:Text{; opts:Collection; {timeout:Real}})
 ```
 
 |パラメーター|データ型|説明|
