@@ -14,15 +14,21 @@ design:
 
 * internally create a single stay-open `ExifTool` object
 
-## ExifTool ImageInfo
+## ExifTool Set Metadata
+
+* repeat {SetNewValue}
+* WriteInfo
+* Complete
+* GetError
+
 
 ```4d
-tagInfo:Object:=ExifTool ImageInfo(file:Text{; opts:Collection; {timeout:Real}})
+status:Object:=Set Metadata(file:Text; opts:Collection; {timeout:Real})
 ```
 
 |パラメーター|データ型|説明|
 |-|-|-|
 |file|Text||
-|opts|Collection||
+|opts|Collection|KVP; value may be Text, Null or numerial (`#` added internally). to support 4D version < 19 R2, implementation does not use `4D.Blob` object capsule.|
 |timeout|Real||
 |status|Object||
