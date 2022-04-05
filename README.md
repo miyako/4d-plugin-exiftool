@@ -23,12 +23,11 @@ design:
 
 
 ```4d
-status:Object:=Set Metadata(file:Text; tags:Object; {timeout:Real})
+status:Object:=Set Metadata(file:Text; tags:Object)
 ```
 
 |parameter|data type|description|
 |-|-|-|
 |file|Text||
 |opts|Collection|KVP; value may be Text, Null or numerial (`#` added internally). to support 4D version < 19 R2, implementation does not use `4D.Blob` object capsule.|
-|timeout|Real||
 |status|Object||
