@@ -22,7 +22,7 @@ design:
 ```4d
 status:Object:=Get Metadata(file:Text{; opts:Text})
 ```
-|parameter|data type|description|
+|parameter|type|description|
 |-|-|-|
 |file|Text||
 |opts|Text|only the following exiftool options are allowed: `-TAG` `-x` `-b` `-c` `-charset` `-d` `-L` `-lang` `-listItem` `-n` `-sep` `-sort` `--a` `-e` `-ee` `-ext` `-F` `-fast` `-fileOrder` `-i` `-if` `-m` `-password` `-r` `-scanForXMP` `-u` `-U` `-z` `-globalTimeShift` `-use` `-@` `-api`|
@@ -41,7 +41,7 @@ status:Object:=Get Metadata(file:Text{; opts:Text})
 status:Object:=Set Metadata(file:Text; tags:Object)
 ```
 
-|parameter|data type|description|
+|parameter|type|description|
 |-|-|-|
 |file|Text||
 |tags|Object|KVP; value may be Text, Null or numerial (`#` added internally). to support 4D version < 19 R2, implementation does not use `4D.Blob` object capsule.|
