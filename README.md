@@ -24,7 +24,7 @@ status:Object:=Get Metadata(file:Text)
 ```
 |parameter|type|description|
 |-|-|-|
-|file|Text||
+|file|Text|platform path of image file|
 |status|Object||
 
 binary data is returned as encapsulated picture (see below).
@@ -50,7 +50,7 @@ status:Object:=Set Metadata(file:Text; tags:Object)
 
 |parameter|type|description|
 |-|-|-|
-|file|Text||
+|file|Text|platform path of image file|
 |tags|Object|KVP; value may be Text, Null or numerial (`#` added internally). to support 4D version < 19 R2, implementation does not use `4D.Blob` capsule object (see below).|
 |status|Object||
 
