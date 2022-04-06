@@ -20,13 +20,20 @@ design:
 * GetError
 
 ```4d
-status:Object:=Get Metadata(file:Text{; opts:Text})
+status:Object:=Get Metadata(file:Text)
 ```
 |parameter|type|description|
 |-|-|-|
 |file|Text||
-|opts|Text|only the following exiftool options are allowed: `-TAG` `-x` `-b` `-c` `-charset` `-d` `-L` `-lang` `-listItem` `-n` `-sep` `-sort` `--a` `-e` `-ee` `-ext` `-F` `-fast` `-fileOrder` `-i` `-if` `-m` `-password` `-r` `-scanForXMP` `-u` `-U` `-z` `-globalTimeShift` `-use` `-@` `-api`|
 |status|Object||
+
+binary data is returned as encapsulated picture (see below).
+
+numeric value is returned as string. (no way ti differentiate `"0"` from empty value).
+
+string data is returned as UTF-8.
+
+data that can not be converted to UTF-8 and back is considered binary.
 
 ## ExifTool Set Metadata
 
