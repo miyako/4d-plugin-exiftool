@@ -82,7 +82,3 @@ $pict:=$status.tagInfo.query("name == :1"; "ThumbnailImage")[0].data
 PICTURE TO BLOB($pict; $data; ExifTool data encapsulation)
 BLOB TO DOCUMENT(System folder(Desktop)+"test.jpeg"; $data)
 ```
-
-## Known issues
-
-releasing the `ExifTool` seems to freeze 4D. it is not released for now.
