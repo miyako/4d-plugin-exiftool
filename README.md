@@ -22,7 +22,7 @@ design:
 ```4d
 status:Object:=Get Metadata(file:Text)
 ```
-|parameter|type|description|
+|Parameter|Type|Description|
 |-|-|-|
 |file|Text|platform path of image file|
 |status|Object||
@@ -48,7 +48,7 @@ data that can not be converted to UTF-8 and back is considered binary.
 status:Object:=Set Metadata(file:Text; tags:Collection)
 ```
 
-|parameter|type|description|
+|Parameter|Type|Description|
 |-|-|-|
 |file|Text|platform path of image file|
 |tags|Collection|value may be Text, Null or numerial (`#` added internally). to support 4D version < 19 R2, implementation does not use `4D.Blob` capsule object (see below)|
