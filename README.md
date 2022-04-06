@@ -45,7 +45,7 @@ data that can not be converted to UTF-8 and back is considered binary.
 * GetError
 
 ```4d
-status:Object:=Set Metadata(file:Text; tags:Object)
+status:Object:=Set Metadata(file:Text; tags:Collection)
 ```
 
 |parameter|type|description|
