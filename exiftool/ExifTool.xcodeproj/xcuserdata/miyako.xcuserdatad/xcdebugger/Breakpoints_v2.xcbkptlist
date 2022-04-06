@@ -3,4 +3,69 @@
    uuid = "FF806920-1B24-4C64-96F4-5A465C8D491F"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A3467D6-E4A4-46A5-A5E8-8DAA29DF7D6F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "4DPlugin-ExifTool.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "665"
+            endingLineNumber = "665"
+            landmarkName = "ExifTool_Get_Metadata(params)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "0A3467D6-E4A4-46A5-A5E8-8DAA29DF7D6F - 766028f70c79170c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExifTool_Get_Metadata(PluginBlock*)"
+                  moduleName = "ExifTool-plugin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miyako/Documents/GitHub/4d-plugin-exiftool/exiftool/4DPlugin-ExifTool.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "707"
+                  endingLineNumber = "707"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "0A3467D6-E4A4-46A5-A5E8-8DAA29DF7D6F - 766028f70c791580"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExifTool_Get_Metadata(PluginBlock*)"
+                  moduleName = "ExifTool-plugin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miyako/Documents/GitHub/4d-plugin-exiftool/exiftool/4DPlugin-ExifTool.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "719"
+                  endingLineNumber = "719"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "0A3467D6-E4A4-46A5-A5E8-8DAA29DF7D6F - 766028f70c790835"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExifTool_Get_Metadata(PluginBlock*)"
+                  moduleName = "ExifTool-plugin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/miyako/Documents/GitHub/4d-plugin-exiftool/exiftool/4DPlugin-ExifTool.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "700"
+                  endingLineNumber = "700"
+                  offsetFromSymbolStart = "280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

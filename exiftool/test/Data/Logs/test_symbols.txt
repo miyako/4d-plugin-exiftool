@@ -1,0 +1,1 @@
+04/07/22	03:13インタープロセス変数サイズ：12プロセス変数サイズ：216	(M)  TEST$status	Object		$data	BLOB		$file	バリアント		$rotated	ピクチャー		$tagInfo	コレクション		$folder	Object		$pict	ピクチャー		メソッド TEST, not called, Thread Unsafe

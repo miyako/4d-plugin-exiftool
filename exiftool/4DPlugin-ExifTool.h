@@ -18,14 +18,31 @@
 #import <Cocoa/Cocoa.h>
 #endif
 
-#include "ExifTool.h"
+//#include "ExifTool.h"
 
 #pragma mark -
 
-void ExifTool_Get_Metadata(PA_PluginParameters params);
-void ExifTool_Set_Metadata(PA_PluginParameters params);
+static void ExifTool_Get_Metadata(PA_PluginParameters params);
+static void ExifTool_Set_Metadata(PA_PluginParameters params);
 
 static void u16_to_u8(CUTF16String& u16, std::string& u8);
 static void u8_to_u16(std::string& u8, CUTF16String& u16);
+
+struct TagInfo
+{
+    TagInfo();
+    virtual ~TagInfo();
+
+    char    *group[3];  // family 0-2 group names
+    char    *name;      // tag name
+    char    *desc;      // tag description
+    char    *id;        // tag ID
+    char    *value;     // converted value
+    int     valueLen;   // length of value in bytes (not including null terminator)
+    char    *num;       // "numerical" value
+    int     numLen;     // length of numerical value
+    int     copyNum;    // copy number for this tag name
+    TagInfo *next;      // next TagInfo in linked list
+};
 
 #endif /* PLUGIN_EXIFTOOL_H */

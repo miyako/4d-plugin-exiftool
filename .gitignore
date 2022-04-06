@@ -1,2 +1,4 @@
 *.DS_Store
 exiftool/build/*
+exiftool/test/userPreferences.*
+exiftool/test/Project/DerivedData/CompiledCode/*
