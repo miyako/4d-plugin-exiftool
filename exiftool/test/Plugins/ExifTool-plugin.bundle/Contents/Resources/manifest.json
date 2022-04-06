@@ -1,0 +1,16 @@
+{
+    "name": "ExifTool",
+    "id": 20000,
+    "commands": [
+        {
+            "theme": "ExifTool",
+            "syntax": "ExifTool Get Metadata(&T):J",
+            "threadSafe": true
+        },
+        {
+            "theme": "ExifTool",
+            "syntax": "ExifTool Set Metadata(&T;&C):J",
+            "threadSafe": true
+        }
+    ]
+}

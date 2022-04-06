@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+    <header>
+        <note>ExifTool</note>
+    </header>
+    <group resname="themes">
+        <trans-unit id="" resname="77445CAC75774031A5D4BC21FB6C94C2" translate="no">
+            <source>data encapsulation</source>
+        </trans-unit>
+    </group>
+    <group restype="x-4DK#" d4:groupName="77445CAC75774031A5D4BC21FB6C94C2">
+        <trans-unit d4:value="private.exiftool.data:S" id="77445CAC75774031A5D4BC21FB6C94C2.0">
+            <source>ExifTool data encapsulation</source>
+        </trans-unit>
+    </group>
+</xliff>

@@ -1,0 +1,2187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>Resources/English.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Y/LFqFmOFfHG8ttzbzXR3qZYLXc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/constants.xlf</key>
+		<data>
+		caDxYFjtpVePE4r2y1pYwGfAWX0=
+		</data>
+		<key>Resources/manifest.json</key>
+		<data>
+		H2tJ9Lb257eXv7mPOektTfTS5dg=
+		</data>
+	</dict>
+	<key>files2</key>
+	<dict>
+		<key>MacOS/exiftool</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			X4eTQL2PtjyEIeBhN5/RRrINKWY=
+			</data>
+			<key>requirement</key>
+			<string>identifier exiftool and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/File/RandomAccess.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			F9DWhb71E72XYGS2+Z9ApkayFC0=
+			</data>
+			<key>requirement</key>
+			<string>identifier RandomAccess and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/File/RandomAccess.pod</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Tkvbci8ujorByq+OBFW8k1jBRGU=
+			</data>
+			<key>requirement</key>
+			<string>identifier RandomAccess and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			OyHbSkQMadoRf0p7UNFUabeCATk=
+			</data>
+			<key>requirement</key>
+			<string>identifier ExifTool and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool.pod</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			y2Zuze/D56Fof2NouL9YDJVP96c=
+			</data>
+			<key>requirement</key>
+			<string>identifier ExifTool and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/AES.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			w7CMhQsJaisrXzWMGW7lr/o/XAg=
+			</data>
+			<key>requirement</key>
+			<string>identifier AES and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/AFCP.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			fB0///NnFVqMOZJqZs8OpgkWJLA=
+			</data>
+			<key>requirement</key>
+			<string>identifier AFCP and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/AIFF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			9dLEVlaCd8PnT9HLLNSk0APlj9I=
+			</data>
+			<key>requirement</key>
+			<string>identifier AIFF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/APE.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Z3f3tqh7hxSpAAyHrY2Q3BeCd4M=
+			</data>
+			<key>requirement</key>
+			<string>identifier APE and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/APP12.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			SiiDWrb1IdHePIo3OjpQM1MjsYc=
+			</data>
+			<key>requirement</key>
+			<string>identifier APP12 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/ASF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			NlSe2OEVTnBADtJzurMKXAFEE3I=
+			</data>
+			<key>requirement</key>
+			<string>identifier ASF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Apple.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			sBTclQJswtL1j7jEP7x5nXtrvkE=
+			</data>
+			<key>requirement</key>
+			<string>identifier Apple and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Audible.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			hIulhc+5GscI2pHUHRfs4VRg/4w=
+			</data>
+			<key>requirement</key>
+			<string>identifier Audible and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/BMP.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			ZRsUHuAlU5m9fglU3g70EWNqd6w=
+			</data>
+			<key>requirement</key>
+			<string>identifier BMP and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/BPG.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			5dNu9VOYg9V+b3ppag5NM7bvn80=
+			</data>
+			<key>requirement</key>
+			<string>identifier BPG and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/BZZ.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			DSTMaM0n+bYiw41iY50US7z2FNk=
+			</data>
+			<key>requirement</key>
+			<string>identifier BZZ and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/BigTIFF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			LYzfLVQdlXk/DLsjRsQgkMdbFtY=
+			</data>
+			<key>requirement</key>
+			<string>identifier BigTIFF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/BuildTagLookup.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Crxt0j+rt2P5UY8YmZeGD2ia1uA=
+			</data>
+			<key>requirement</key>
+			<string>identifier BuildTagLookup and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/CBOR.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			9d2e/HM5TcE3vI53RCTrf1wXWeA=
+			</data>
+			<key>requirement</key>
+			<string>identifier CBOR and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Canon.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			NvJwkiPiEwogcC9ErBgh7A/nZ94=
+			</data>
+			<key>requirement</key>
+			<string>identifier Canon and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/CanonCustom.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			f7ZvphMSPxfxEotQUrB/MeoY3OQ=
+			</data>
+			<key>requirement</key>
+			<string>identifier CanonCustom and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/CanonRaw.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			/wArVtDIQ11tE3NnzodYmGbixfA=
+			</data>
+			<key>requirement</key>
+			<string>identifier CanonRaw and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/CanonVRD.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			67epel2k5Moclx2aash3wZmIRQE=
+			</data>
+			<key>requirement</key>
+			<string>identifier CanonVRD and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/CaptureOne.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			BwrdtNyWIcSKLtxQULsqFDX8MaY=
+			</data>
+			<key>requirement</key>
+			<string>identifier CaptureOne and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Casio.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			agzTzTVd5olt4OBexxVLsQaW/MI=
+			</data>
+			<key>requirement</key>
+			<string>identifier Casio and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			buBCSXDp9QPm6EpRATAwKrrCXUI=
+			</data>
+			<key>requirement</key>
+			<string>identifier Charset and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/Arabic.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			tyxKjzY+bttfJ2tRijRC04zZnv4=
+			</data>
+			<key>requirement</key>
+			<string>identifier Arabic and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/Baltic.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			JDy00+4cBl08bkzhx6BgMmsvNWg=
+			</data>
+			<key>requirement</key>
+			<string>identifier Baltic and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/Cyrillic.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			kEEDQwDlZ3pdkw4mqEz9KT6JJVA=
+			</data>
+			<key>requirement</key>
+			<string>identifier Cyrillic and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/DOSCyrillic.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			sOjZqC4sG1S986JN7m8XNMkF7QU=
+			</data>
+			<key>requirement</key>
+			<string>identifier DOSCyrillic and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/DOSLatin1.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			d+Sdap0dLpQiuh2UCcLdwmd+J4A=
+			</data>
+			<key>requirement</key>
+			<string>identifier DOSLatin1 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/DOSLatinUS.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			2AhLwO26PjFyBs8xNDEbFkjuB4U=
+			</data>
+			<key>requirement</key>
+			<string>identifier DOSLatinUS and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/Greek.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			C4ge/YENWsEimH/tfJRrXqyzJZY=
+			</data>
+			<key>requirement</key>
+			<string>identifier Greek and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/Hebrew.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			ebnajKRJrd9YYGJshNpjoIIDErc=
+			</data>
+			<key>requirement</key>
+			<string>identifier Hebrew and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/JIS.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			BpREUqus3SXf7o96nZGSBOvFYhk=
+			</data>
+			<key>requirement</key>
+			<string>identifier JIS and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/Latin.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			61hIZSAkP94iBsXezZIEeRnAOyI=
+			</data>
+			<key>requirement</key>
+			<string>identifier Latin and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/Latin2.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			wEM+jDHHyBGrDSyBYzVYWvE0Q6w=
+			</data>
+			<key>requirement</key>
+			<string>identifier Latin2 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacArabic.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			BTHgMToBfCxodnyKw1wEM08DbYw=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacArabic and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacChineseCN.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			898k6ENukiCRvZMyMmf+U7L58Ao=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacChineseCN and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacChineseTW.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			gDnfvV70n2WCd2aB+SAgFN5HJ30=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacChineseTW and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacCroatian.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			cqXoatCCmaWBoxZYHtCG1dJuYPM=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacCroatian and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacCyrillic.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			uksxJY6YY4ySnHPSWDUa608wLdY=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacCyrillic and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacGreek.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			0uUe3LTnrJvoYur8KOGFDRe40xM=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacGreek and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacHebrew.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			55r3FUXbniuA014nuDN+HgU18dk=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacHebrew and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacIceland.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			WGb3l6YRpCf4S4pXWHNmF4HFyuU=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacIceland and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacJapanese.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			AmIKPyCwXuC8TC2c6hNT4did4do=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacJapanese and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacKorean.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			+Fskus+Tz0Wtt/mGy537/fzW10U=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacKorean and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacLatin2.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			8US4jMNhhaLMcV51KkAwargL6vk=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacLatin2 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacRSymbol.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			fUtYXRtlH94kPiU4V0SI7hlWZAc=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacRSymbol and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacRoman.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			6bGpNSIPdaNnV/KDxOWW2UIWoP4=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacRoman and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacRomanian.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Y6gNyb9oiNlFqaLfyjSL0yyGXek=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacRomanian and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacThai.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			+32Yz/4+Q5kiU8WvnniwK5kf+Zc=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacThai and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/MacTurkish.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			VkpJ6c5ICg/AonialAozB0kXLhk=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacTurkish and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/PDFDoc.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			OZTCzgmrPk0iHEO58dpd38uM5pM=
+			</data>
+			<key>requirement</key>
+			<string>identifier PDFDoc and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/ShiftJIS.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			7e0R9nhh2CIDao819I/rDiPkfoQ=
+			</data>
+			<key>requirement</key>
+			<string>identifier ShiftJIS and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/Symbol.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			oSudIRaYpfIcK3uqpJM262d7MTw=
+			</data>
+			<key>requirement</key>
+			<string>identifier Symbol and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/Thai.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			75G24o3w8wvJZ5hOiG2no1vWppI=
+			</data>
+			<key>requirement</key>
+			<string>identifier Thai and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/Turkish.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			bhbtGTlu5b9EdN6oJEy3Sjv4ZV8=
+			</data>
+			<key>requirement</key>
+			<string>identifier Turkish and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Charset/Vietnam.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Ol5a/Xai04/m5TOduHHyRO1jelg=
+			</data>
+			<key>requirement</key>
+			<string>identifier Vietnam and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/DICOM.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			MbVGqrZjzYO/5SqETe+0NjBHhjo=
+			</data>
+			<key>requirement</key>
+			<string>identifier DICOM and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/DJI.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			j1zIrn8nJ/oPWXHSTCRdj+JiZrU=
+			</data>
+			<key>requirement</key>
+			<string>identifier DJI and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/DNG.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			7Bfb1ZM1+vnBU83DUQBko4k77eE=
+			</data>
+			<key>requirement</key>
+			<string>identifier DNG and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/DPX.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			CJmTUwfskuF57u95nEeMFGYlNyE=
+			</data>
+			<key>requirement</key>
+			<string>identifier DPX and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/DV.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			bMdMBkrZ6wUXAD8iE8fQ4sKwR+A=
+			</data>
+			<key>requirement</key>
+			<string>identifier DV and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/DarwinCore.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			irS9IUSZDJbvDDiUmRdknDeSryQ=
+			</data>
+			<key>requirement</key>
+			<string>identifier DarwinCore and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/DjVu.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			J/PzPxFyMM3++yBb3t9LFDqQK2Y=
+			</data>
+			<key>requirement</key>
+			<string>identifier DjVu and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/EXE.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			EBFMztilAH4K0n3wtrC2vQJFYb4=
+			</data>
+			<key>requirement</key>
+			<string>identifier EXE and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Exif.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			wkU/I7ZUkquo5/27ek0M3ffzHF4=
+			</data>
+			<key>requirement</key>
+			<string>identifier Exif and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/FITS.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			sODlMHkamg7uM29B3iaLxZDWwxg=
+			</data>
+			<key>requirement</key>
+			<string>identifier FITS and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/FLAC.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			kum/g8Agf9P2su0CzcdXSrvabAY=
+			</data>
+			<key>requirement</key>
+			<string>identifier FLAC and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/FLIF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			RuwA48lh5XiaCuhRhj/zqZ/yK1I=
+			</data>
+			<key>requirement</key>
+			<string>identifier FLIF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/FLIR.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			6IZyNbNg7A2PE31ThZpGclyrzBI=
+			</data>
+			<key>requirement</key>
+			<string>identifier FLIR and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Fixup.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Te+OzpxWptwE91B9c6vd9qkQFSE=
+			</data>
+			<key>requirement</key>
+			<string>identifier Fixup and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Flash.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			yZ9HZ+EP8Ic1vGHYSIeVIVCKXhI=
+			</data>
+			<key>requirement</key>
+			<string>identifier Flash and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/FlashPix.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			71OuYq+3mCnRXR299jFiA9PyZpE=
+			</data>
+			<key>requirement</key>
+			<string>identifier FlashPix and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Font.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			KuA8MNdd4V8VZloSv79D+33X620=
+			</data>
+			<key>requirement</key>
+			<string>identifier Font and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/FotoStation.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			x5/C7/lf/PVntmVvW2GoceZkv78=
+			</data>
+			<key>requirement</key>
+			<string>identifier FotoStation and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/FujiFilm.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Ip+RsJE8b49mjD4o5JYcejH6xB4=
+			</data>
+			<key>requirement</key>
+			<string>identifier FujiFilm and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/GE.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			UkMX32jF0QuDMiJJdoKQ3BWY26k=
+			</data>
+			<key>requirement</key>
+			<string>identifier GE and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/GIF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			wIGDE5E8r6rgcVauagoQA6Vabik=
+			</data>
+			<key>requirement</key>
+			<string>identifier GIF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/GIMP.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			7AiLuvyyodKde0FGS0xb5xZqpgs=
+			</data>
+			<key>requirement</key>
+			<string>identifier GIMP and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/GPS.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			oPNBbp7K12SJEjkE9IuYGurNyKQ=
+			</data>
+			<key>requirement</key>
+			<string>identifier GPS and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/GeoTiff.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			19FPcEe2qFUintGrdYUS+1JL+CM=
+			</data>
+			<key>requirement</key>
+			<string>identifier GeoTiff and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Geotag.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			45xBRzAoJDj1wdUZAcEP/tztn+E=
+			</data>
+			<key>requirement</key>
+			<string>identifier Geotag and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/GoPro.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			kKIXDGA9voNvf+3YrOHBmvdLUbk=
+			</data>
+			<key>requirement</key>
+			<string>identifier GoPro and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/H264.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			h1GZMvH8TmNSVgYtvP+wWUGaadY=
+			</data>
+			<key>requirement</key>
+			<string>identifier H264 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/HP.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			QHNB++ebMTtLETBHhqgAoSNrHIk=
+			</data>
+			<key>requirement</key>
+			<string>identifier HP and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/HTML.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Ofkh1JNqRGHUEpFotdFZ2pMVYE4=
+			</data>
+			<key>requirement</key>
+			<string>identifier HTML and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/HtmlDump.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			gjsR5YEfXCn7bqvAjdReW1UEBls=
+			</data>
+			<key>requirement</key>
+			<string>identifier HtmlDump and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/ICC_Profile.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Dhe3E2aNTLXZ1yPCLtURQ5Dx+Jk=
+			</data>
+			<key>requirement</key>
+			<string>identifier "ICC_Profile" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/ID3.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			OSCMPZjrllf8vWWy0Td3esNL62k=
+			</data>
+			<key>requirement</key>
+			<string>identifier ID3 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/IPTC.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			OsYZ+asCOQ7kHKJ85QVGlP1hGIQ=
+			</data>
+			<key>requirement</key>
+			<string>identifier IPTC and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/ISO.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			EIutB4mvey0ZMd/UO5T6Q8ArEA0=
+			</data>
+			<key>requirement</key>
+			<string>identifier ISO and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/ITC.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			+311GIbeYmBf7/1SA6GwJhPwg5I=
+			</data>
+			<key>requirement</key>
+			<string>identifier ITC and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Import.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			n88npebksQCBdeaZCkhFuPWEZR4=
+			</data>
+			<key>requirement</key>
+			<string>identifier Import and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/InDesign.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			se2SpBLXa5P/+vHIsUqLvsIe4J4=
+			</data>
+			<key>requirement</key>
+			<string>identifier InDesign and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/JPEG.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			AZCIQ7lgH/EbqEMJGIdxg1cLXz8=
+			</data>
+			<key>requirement</key>
+			<string>identifier JPEG and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/JPEGDigest.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			pxqrxL4oAEO9rGgey3LN7w/APZM=
+			</data>
+			<key>requirement</key>
+			<string>identifier JPEGDigest and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/JSON.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			tzrNdEHnjURotb1Nb1VWD/6326U=
+			</data>
+			<key>requirement</key>
+			<string>identifier JSON and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/JVC.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			e5jvjmwOcri/jPz8GzkSIH6aMKo=
+			</data>
+			<key>requirement</key>
+			<string>identifier JVC and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Jpeg2000.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			avWhzBIK8vLapOMKxbbeb87g2Hw=
+			</data>
+			<key>requirement</key>
+			<string>identifier Jpeg2000 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Kodak.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			zhmVnt8CYphFAT0jyPjB0qSFrHo=
+			</data>
+			<key>requirement</key>
+			<string>identifier Kodak and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/KyoceraRaw.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			nJy6F0Spq70JaPWmSWYkf4aBzFU=
+			</data>
+			<key>requirement</key>
+			<string>identifier KyoceraRaw and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/LIF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			FJU++sa1BmWBxRAx2g9mEjAmhfk=
+			</data>
+			<key>requirement</key>
+			<string>identifier LIF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/LNK.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			gFnoiMXoLi2+tRYM41Iz812gkGk=
+			</data>
+			<key>requirement</key>
+			<string>identifier LNK and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/cs.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			F8glASFFj90BaabOUF8tX32S9/0=
+			</data>
+			<key>requirement</key>
+			<string>identifier cs and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/de.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			YSe4OzOl2YDHVuOEI4uIvw0Lg6Y=
+			</data>
+			<key>requirement</key>
+			<string>identifier de and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/en_ca.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			YKCCcHsBBu0TsENYV4iX5f8qY1A=
+			</data>
+			<key>requirement</key>
+			<string>identifier "en_ca" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/en_gb.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			FaAD6YuT9ojdcvrf3KWubPDXCPA=
+			</data>
+			<key>requirement</key>
+			<string>identifier "en_gb" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/es.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			XQjeECuCY/utBT9YBUiQMWFkYaA=
+			</data>
+			<key>requirement</key>
+			<string>identifier es and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/fi.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Q1viU3XUhKYUPcJxm++n/eXu/iE=
+			</data>
+			<key>requirement</key>
+			<string>identifier fi and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/fr.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			+GeVQo0IlK4YyC49epEkww9AOig=
+			</data>
+			<key>requirement</key>
+			<string>identifier fr and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/it.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			XzhMfvHlFTVLdCKvJzFlA95xOjg=
+			</data>
+			<key>requirement</key>
+			<string>identifier it and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/ja.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			pmdLVS205zyXIElMt6Xv8OXgW9A=
+			</data>
+			<key>requirement</key>
+			<string>identifier ja and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/ko.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			4wNPsA7S+FzBnEQK+P42u6w1uhM=
+			</data>
+			<key>requirement</key>
+			<string>identifier ko and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/nl.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			D1tosy2LZueC5eI6gT1RA+Fd/d8=
+			</data>
+			<key>requirement</key>
+			<string>identifier nl and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/pl.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			WsWVZEX72mR7HLh8YpoMCyTQAHs=
+			</data>
+			<key>requirement</key>
+			<string>identifier pl and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/ru.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			e4zAY42jJktqYC32iDUcCJIQyT8=
+			</data>
+			<key>requirement</key>
+			<string>identifier ru and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/sv.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			wKE6pgBOoRNLSA9VBBUhyO4KF1E=
+			</data>
+			<key>requirement</key>
+			<string>identifier sv and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/tr.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			tOYaC+vCK1Vbgpz7jwfuugp2KFg=
+			</data>
+			<key>requirement</key>
+			<string>identifier tr and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/zh_cn.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			YcBVk3vFmlwm6WYtJYmgR7/Fj7c=
+			</data>
+			<key>requirement</key>
+			<string>identifier "zh_cn" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lang/zh_tw.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			C2ZDWfogzLbcylprTd3a4p+hH1w=
+			</data>
+			<key>requirement</key>
+			<string>identifier "zh_tw" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Leaf.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			1jpbgu1HkfTwEk+B3SrgYp9k8jY=
+			</data>
+			<key>requirement</key>
+			<string>identifier Leaf and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Lytro.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			UxyplH6efnGSkS1qNjva7Uflyl8=
+			</data>
+			<key>requirement</key>
+			<string>identifier Lytro and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/M2TS.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			X6Km/LEzHoWYyur/dFfaxC2THjw=
+			</data>
+			<key>requirement</key>
+			<string>identifier M2TS and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MIE.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			U3KKRiSnUq7qwSSp3QmXOw8Pf6o=
+			</data>
+			<key>requirement</key>
+			<string>identifier MIE and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MIEUnits.pod</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			lEr9no+dURDBRDeXIYwg1Legl4E=
+			</data>
+			<key>requirement</key>
+			<string>identifier MIEUnits and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MIFF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			NhYJWZYrTj97uY1dahafTAfeW0o=
+			</data>
+			<key>requirement</key>
+			<string>identifier MIFF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MNG.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			iEPCNgFBoJ58D73eoCgWGMz3I98=
+			</data>
+			<key>requirement</key>
+			<string>identifier MNG and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MOI.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			4N9xYF5Z4G64yb4PPfu6OLXhcsI=
+			</data>
+			<key>requirement</key>
+			<string>identifier MOI and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MPC.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			oTbURcw21iRqFqYcWQ0Ys5b4o6Y=
+			</data>
+			<key>requirement</key>
+			<string>identifier MPC and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MPEG.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			mBnPg4SIr5YooXi1vRtGTX0gEq8=
+			</data>
+			<key>requirement</key>
+			<string>identifier MPEG and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MPF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			QmZiiu/A4+yB6TDutcjB78KDL1g=
+			</data>
+			<key>requirement</key>
+			<string>identifier MPF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MRC.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			dCybb9ts8YeI8s0K0ImUFl8IxMw=
+			</data>
+			<key>requirement</key>
+			<string>identifier MRC and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MWG.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			zqgiQzXOJDZg0o1yxBF5fPKNYwA=
+			</data>
+			<key>requirement</key>
+			<string>identifier MWG and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MXF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			C6XaMdjyWD8L5Zx15vxdZCT/nWw=
+			</data>
+			<key>requirement</key>
+			<string>identifier MXF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MacOS.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			6XMMX5klpLznnT/KBYe7gdwSUr8=
+			</data>
+			<key>requirement</key>
+			<string>identifier MacOS and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MakerNotes.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			GWknKxszpS9dTateAwWz22W2xg4=
+			</data>
+			<key>requirement</key>
+			<string>identifier MakerNotes and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Matroska.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			8t47F9p4Notn1XvDX8X85H/27JU=
+			</data>
+			<key>requirement</key>
+			<string>identifier Matroska and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Microsoft.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			e2qJpBc5CVDXNg6YmEZKQEswfks=
+			</data>
+			<key>requirement</key>
+			<string>identifier Microsoft and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Minolta.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			8ryD7t6xRaDqcxS01pwg5oc1o6k=
+			</data>
+			<key>requirement</key>
+			<string>identifier Minolta and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/MinoltaRaw.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			ChgAoUYb97eZjBSLQCpPAmXVA+o=
+			</data>
+			<key>requirement</key>
+			<string>identifier MinoltaRaw and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Motorola.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			iCMJBkHb2HFVqSFxhPLLiT3QBBk=
+			</data>
+			<key>requirement</key>
+			<string>identifier Motorola and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Nikon.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			wSSicCV31n/o6hMb0E/BI4j5U8I=
+			</data>
+			<key>requirement</key>
+			<string>identifier Nikon and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/NikonCapture.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			TC3Q5HGfeMVfy8Vwt5MIszllqfs=
+			</data>
+			<key>requirement</key>
+			<string>identifier NikonCapture and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/NikonCustom.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			V93Pgz6/2Ejy2RXAhOaC92A0N1U=
+			</data>
+			<key>requirement</key>
+			<string>identifier NikonCustom and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/NikonSettings.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			lVigVmrYWKsjJDR4Nt9c8U3x8a4=
+			</data>
+			<key>requirement</key>
+			<string>identifier NikonSettings and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Nintendo.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			FIPq5CT4+2J3/5NHCDgJ6go3DHg=
+			</data>
+			<key>requirement</key>
+			<string>identifier Nintendo and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/OOXML.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			30rsSzbREVUuronu+CLbpvFtBMw=
+			</data>
+			<key>requirement</key>
+			<string>identifier OOXML and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Ogg.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			oyXgeI29xlFe+IxiNMBDP0H5yiQ=
+			</data>
+			<key>requirement</key>
+			<string>identifier Ogg and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Olympus.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			TD5CQ6hy0A1phXaVuREVHWrSd+w=
+			</data>
+			<key>requirement</key>
+			<string>identifier Olympus and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/OpenEXR.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			qbn0HcgoyrYb37IsJ1Si1sypLK4=
+			</data>
+			<key>requirement</key>
+			<string>identifier OpenEXR and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Opus.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			QTYb/3lbn2icXFRkvN6k86mStCE=
+			</data>
+			<key>requirement</key>
+			<string>identifier Opus and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Other.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			rOTVhRwW2nOjZPPIQUqZP/2q+F8=
+			</data>
+			<key>requirement</key>
+			<string>identifier Other and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PCX.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			+f2XcwOwoFGfyuVoImTeer5KpeY=
+			</data>
+			<key>requirement</key>
+			<string>identifier PCX and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PDF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			jz6OpDjnWFrhc4BAN/JwvWupugI=
+			</data>
+			<key>requirement</key>
+			<string>identifier PDF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PGF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			t0/PDoRGElsv6Q7/tDBIcVZ10eM=
+			</data>
+			<key>requirement</key>
+			<string>identifier PGF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PICT.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			KMWHRgcqMWdMVPZ/f8wrl4vPWPY=
+			</data>
+			<key>requirement</key>
+			<string>identifier PICT and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PLIST.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			lcXO2XjCNbdHIric4O81t8PsvKA=
+			</data>
+			<key>requirement</key>
+			<string>identifier PLIST and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PLUS.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			85ipYb4uclCO/RB2jJoD92vsvdQ=
+			</data>
+			<key>requirement</key>
+			<string>identifier PLUS and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PNG.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			qagHuAiLu1Y5eROrslUFYSSMAzs=
+			</data>
+			<key>requirement</key>
+			<string>identifier PNG and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PPM.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			/JtQurPQPLKB66slZ0I8dJn0XRE=
+			</data>
+			<key>requirement</key>
+			<string>identifier PPM and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PSP.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			PuzPE0Y9T7BaewOFrEcVH8WcjeA=
+			</data>
+			<key>requirement</key>
+			<string>identifier PSP and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Palm.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Tu/6tDqBNxTUKVT+IJB0ZZRyAg8=
+			</data>
+			<key>requirement</key>
+			<string>identifier Palm and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Panasonic.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			4J/+RQc9ZuqjZeI6hEC1uD5Z+KI=
+			</data>
+			<key>requirement</key>
+			<string>identifier Panasonic and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PanasonicRaw.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			YCRanSfHKq0CBjRep2kWnTXlKSU=
+			</data>
+			<key>requirement</key>
+			<string>identifier PanasonicRaw and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Parrot.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			hZ3thzzKVLP6r0Y4SwElsuJ9gOE=
+			</data>
+			<key>requirement</key>
+			<string>identifier Parrot and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Pentax.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			0iHxh++NqLLnXenI+uYPCAvpQBM=
+			</data>
+			<key>requirement</key>
+			<string>identifier Pentax and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PhaseOne.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			1Lk68HHzfdD4pcAWcm6fAb/9Eck=
+			</data>
+			<key>requirement</key>
+			<string>identifier PhaseOne and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PhotoCD.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			5PcrZ/SFzWax/eON0Qu9dJ8SH48=
+			</data>
+			<key>requirement</key>
+			<string>identifier PhotoCD and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PhotoMechanic.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			J6oKgeXiiKuL+BnJKKsRQxHFVr0=
+			</data>
+			<key>requirement</key>
+			<string>identifier PhotoMechanic and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Photoshop.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Ht009dqQlgyV5YPdD7N53hMUNu8=
+			</data>
+			<key>requirement</key>
+			<string>identifier Photoshop and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PostScript.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			SOlDbVHQ2oE285Eaz3+wabd8LuM=
+			</data>
+			<key>requirement</key>
+			<string>identifier PostScript and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/PrintIM.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			wo2kUXAteJx3b+hALYdcmHsP+cA=
+			</data>
+			<key>requirement</key>
+			<string>identifier PrintIM and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Qualcomm.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			G3Ct8q6GWX76lE67OsVM4UNw288=
+			</data>
+			<key>requirement</key>
+			<string>identifier Qualcomm and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/QuickTime.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			gtfLn+BsjOMB0J1dNAhAnFm5Hnk=
+			</data>
+			<key>requirement</key>
+			<string>identifier QuickTime and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/QuickTimeStream.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			+K/CTClCT1T8nuj2l/rEQpYOy9A=
+			</data>
+			<key>requirement</key>
+			<string>identifier QuickTimeStream and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/README</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			AiNaQMedQsHcR6ouyFYCWEz/L1s=
+			</data>
+			<key>requirement</key>
+			<string>identifier README and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/RIFF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			/ypAGlU17G3ie26YbvNXZJF9mko=
+			</data>
+			<key>requirement</key>
+			<string>identifier RIFF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/RSRC.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			u44Or0rcuuqBKATt3fL9Zt5FiE8=
+			</data>
+			<key>requirement</key>
+			<string>identifier RSRC and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/RTF.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			POs8NHAHiqLIOfxaEeVMQy07nfA=
+			</data>
+			<key>requirement</key>
+			<string>identifier RTF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Radiance.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			chJmTwG0phNsiTH5xAfdnTqaB6Y=
+			</data>
+			<key>requirement</key>
+			<string>identifier Radiance and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Rawzor.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			+YtZ2sSW+1jCawsaCt3B96JJRUs=
+			</data>
+			<key>requirement</key>
+			<string>identifier Rawzor and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Real.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			vpH5bWnbw+M+8J0o5kc+1lwlqpo=
+			</data>
+			<key>requirement</key>
+			<string>identifier Real and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Reconyx.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			bxQdjokdUW9qHqiWcmrZhpjSkgU=
+			</data>
+			<key>requirement</key>
+			<string>identifier Reconyx and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Red.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			K6daGXvE9qMmdAQhyV7Np5Z5wkc=
+			</data>
+			<key>requirement</key>
+			<string>identifier Red and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Ricoh.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			aQgS1Hq4GkeIkMMni36/CCqM/2c=
+			</data>
+			<key>requirement</key>
+			<string>identifier Ricoh and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Samsung.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			kaV/m2kANq0wOmvxnmLJ+6FWsas=
+			</data>
+			<key>requirement</key>
+			<string>identifier Samsung and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Sanyo.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			kdJukAOq3p3M46siVeBqmQwG0og=
+			</data>
+			<key>requirement</key>
+			<string>identifier Sanyo and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Scalado.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			g3CZsOPH6x0xAVPZDKZBbbBjRh8=
+			</data>
+			<key>requirement</key>
+			<string>identifier Scalado and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Shift.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			jUSofkCwv8oId9Ed2xHYybeA3jg=
+			</data>
+			<key>requirement</key>
+			<string>identifier Shift and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Shortcuts.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			psK5RdlnGzFwe8pVU3kcBIoiYuk=
+			</data>
+			<key>requirement</key>
+			<string>identifier Shortcuts and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Sigma.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			TyFTSXLqVeyg01MlUz/A75qatsk=
+			</data>
+			<key>requirement</key>
+			<string>identifier Sigma and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/SigmaRaw.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			9BY5sH4m22yRIE/NGbC/KDxWz0w=
+			</data>
+			<key>requirement</key>
+			<string>identifier SigmaRaw and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Sony.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			n4mwJM5NcooqiUyxTEitZa+gfmg=
+			</data>
+			<key>requirement</key>
+			<string>identifier Sony and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/SonyIDC.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			lykbADa9x54fruMfYVB9nkmX/vs=
+			</data>
+			<key>requirement</key>
+			<string>identifier SonyIDC and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Stim.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			GbN+TnlOuSKMIpgQiMl5PTvhmi8=
+			</data>
+			<key>requirement</key>
+			<string>identifier Stim and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/TagInfoXML.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			AxgTxPig4kb2bMW8STvCcTe3qMk=
+			</data>
+			<key>requirement</key>
+			<string>identifier TagInfoXML and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/TagLookup.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			FjckbVFkmocJdVMG0nvZt6zxqpY=
+			</data>
+			<key>requirement</key>
+			<string>identifier TagLookup and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/TagNames.pod</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			PBTda72jTIXvOSeX87u1AFxwNWo=
+			</data>
+			<key>requirement</key>
+			<string>identifier TagNames and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Text.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			2dhW9v1mMUftxfyIH69oE0zKu+0=
+			</data>
+			<key>requirement</key>
+			<string>identifier Text and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Theora.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			iTxoO0BHOiQDM/XIJTXca4gPEM8=
+			</data>
+			<key>requirement</key>
+			<string>identifier Theora and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Torrent.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			f97jFhTpC1dCtMlKpbW0wLLTsI8=
+			</data>
+			<key>requirement</key>
+			<string>identifier Torrent and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Unknown.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			W/oROvXsI/jMxeLpJiP8/uH6s8U=
+			</data>
+			<key>requirement</key>
+			<string>identifier Unknown and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/VCard.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			p1FL+ZbpA9kwTGpDCJN4wxgd7EI=
+			</data>
+			<key>requirement</key>
+			<string>identifier VCard and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Validate.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			U6tPRqkxGeYlErPHPPA7AWI2RMw=
+			</data>
+			<key>requirement</key>
+			<string>identifier Validate and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Vorbis.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			EjlJ1V+2aDRqJThTmRbHjikVa/4=
+			</data>
+			<key>requirement</key>
+			<string>identifier Vorbis and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/WTV.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			7OPtcQum/V9CYZnPGDWKrrIWbEM=
+			</data>
+			<key>requirement</key>
+			<string>identifier WTV and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/WriteCanonRaw.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			5KlMJhL5wBnz897ZRSkzCxb11Rs=
+			</data>
+			<key>requirement</key>
+			<string>identifier WriteCanonRaw and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/WriteExif.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			oTyCN9y7IQOs4vDAiOBfeHeQ5Gc=
+			</data>
+			<key>requirement</key>
+			<string>identifier WriteExif and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/WriteIPTC.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			jTGK7IRPBBDUGVGQzukRxfZZLIo=
+			</data>
+			<key>requirement</key>
+			<string>identifier WriteIPTC and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/WritePDF.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			2E097NF3eiQy01U0o0wKy7tPHqE=
+			</data>
+			<key>requirement</key>
+			<string>identifier WritePDF and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/WritePNG.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			sQCay2yMM4z00i7Td19EAzEMeRo=
+			</data>
+			<key>requirement</key>
+			<string>identifier WritePNG and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/WritePhotoshop.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			zqaPzMEMDdmBitgT/qaCARgcQKg=
+			</data>
+			<key>requirement</key>
+			<string>identifier WritePhotoshop and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/WritePostScript.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			QX90TGwu7eNCBe3H2ytBtIB/ZMg=
+			</data>
+			<key>requirement</key>
+			<string>identifier WritePostScript and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/WriteQuickTime.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			uS03+qzJOto+M7Bps4VDbYvWsUw=
+			</data>
+			<key>requirement</key>
+			<string>identifier WriteQuickTime and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/WriteXMP.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			00qckTZWhUGvIg207iP/s0N2WoY=
+			</data>
+			<key>requirement</key>
+			<string>identifier WriteXMP and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/Writer.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			oaQwPXhUnF1KhL2bKFgMndvPZqs=
+			</data>
+			<key>requirement</key>
+			<string>identifier Writer and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/XMP.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			4TTaBTczX6Fppk7vZFtf6/85ir4=
+			</data>
+			<key>requirement</key>
+			<string>identifier XMP and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/XMP2.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			1LN8vv5k/VSxvE1RdwH1PwDAhD8=
+			</data>
+			<key>requirement</key>
+			<string>identifier XMP2 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/XMPStruct.pl</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			sgTVT0TMWyXcXSWYO9EZ9GLUl8Q=
+			</data>
+			<key>requirement</key>
+			<string>identifier XMPStruct and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/ZIP.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			7B/aJP0e45L1qOQP5FCPALFKjAE=
+			</data>
+			<key>requirement</key>
+			<string>identifier ZIP and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/ZISRAW.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			Hk41mRBrOwNlUzGM3d6FVpqvfuY=
+			</data>
+			<key>requirement</key>
+			<string>identifier ZISRAW and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/lib/Image/ExifTool/iWork.pm</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			JD60hbBd9JoUKF8H7L91Tt1vWLM=
+			</data>
+			<key>requirement</key>
+			<string>identifier iWork and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>QuickLook/Thumbnail.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nGfrvibB5KlzvZgF4Bra+l0HpRloxismgTLePnOwCdk=
+			</data>
+		</dict>
+		<key>Resources/English.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R1rJMY+g8Z7q0mheVExCcEDeNgqojhIvy6T1t7X9820=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/constants.xlf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lmnuzYp2C+dPAJT4EuFE6CTGbd2rzv5AnNy3d4knrcw=
+			</data>
+		</dict>
+		<key>Resources/manifest.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6jgA11waUesfxL9BWoI48van4VdeaCgMyz31E7FaFm0=
+			</data>
+		</dict>
+		<key>Windows64/exiftool.exe</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4/rcXNeoFjPFDj2nud+uzTKXsu3Dz6MTC9WizKiCDMs=
+			</data>
+		</dict>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>^Resources/</key>
+		<true/>
+		<key>^Resources/.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
+		<key>^version.plist$</key>
+		<true/>
+	</dict>
+	<key>rules2</key>
+	<dict>
+		<key>.*\.dSYM($|/)</key>
+		<dict>
+			<key>weight</key>
+			<real>11</real>
+		</dict>
+		<key>^(.*/)?\.DS_Store$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>2000</real>
+		</dict>
+		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>^.*</key>
+		<true/>
+		<key>^Info\.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^PkgInfo$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^Resources/</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^Resources/.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
+		<key>^[^/]+$</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>^embedded\.provisionprofile$</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+		<key>^version\.plist$</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
+	</dict>
+</dict>
+</plist>
