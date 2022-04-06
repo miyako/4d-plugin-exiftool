@@ -10,6 +10,8 @@ Mac only; Visual Studio does not have POSIX `fcntl`
 
 **TODO**: refactor pipe with platform SDK
 
+**TODO**: `NSTask` with timeout
+
 reference: https://github.com/miyako/4d-plugin-midi
 
 based on:
