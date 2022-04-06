@@ -60,6 +60,8 @@ to pass binary data, convert it to `Picture` using the custom UTI:
 BLOB TO PICTURE($BLOB; $PICT; "private.exiftool.data")
 ```
 
+constant `ExifTool data encapsulation` is exported by the plugin.
+
 ```4d
 /*
 	example of binary tag; returned as encapsulated picture, retrivable as BLOB
