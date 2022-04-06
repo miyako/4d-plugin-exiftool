@@ -27,9 +27,6 @@ design:
 
 ## ExifTool Get Metadata
 
-* ImageInfo
-* GetError
-
 ```4d
 status:Object:=Get Metadata(file:Text)
 ```
@@ -47,13 +44,6 @@ string data is returned as UTF-8.
 data that can not be converted to UTF-8 and back is considered binary.
 
 ## ExifTool Set Metadata
-
-* repeat {SetNewValue}
-* WriteInfo
-* Complete
-* GetSummary
-* GetOutput
-* GetError
 
 ```4d
 status:Object:=Set Metadata(file:Text; tags:Collection)
