@@ -75,3 +75,7 @@ BLOB TO DOCUMENT(System folder(Desktop)+"test.jpeg"; $data)
 ---
 
 generic low level commands (`Command` `GetOutput`) are not implemented for now.
+
+## Known issues
+
+releasing the `ExifTool` seems to freeze 4D. it is not released for now.
