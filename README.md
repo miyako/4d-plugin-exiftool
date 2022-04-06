@@ -53,6 +53,16 @@ to pass binary data, convert it to `Picture` using the custom UTI:
 BLOB TO PICTURE($BLOB; $PICT; "private.exiftool.data")
 ```
 
+```4d
+/*
+	example of binary tag; returned as encapsulated picture, retrivable as BLOB
+*/
+
+$pict:=$status.tagInfo.query("name == :1"; "ThumbnailImage")[0].data
+PICTURE TO BLOB($pict; $data; ExifTool data encapsulation)
+BLOB TO DOCUMENT(System folder(Desktop)+"test.jpeg"; $data)
+```
+
 ---
 
 generic low level commands (`Command` `GetOutput`) are not implemented for now.
