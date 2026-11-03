@@ -595,11 +595,13 @@ static TagInfo *ExifTool_GetInfo(char *pt) {
                         break;
                     }
                     if (g > 2) {
-                        // get copy number
-                        if (!memcmp(str, "Copy", 4)) {
+                        // get copy number (family 4 is "" or "CopyN");
+                        // strncmp: memcmp read past a "" string, and str
+                        // leaked unless it was "CopyN" (one per tag)
+                        if (!strncmp(str, "Copy", 4)) {
                             next->copyNum = atoi(str+4);
-                            delete [] str; // done with this string
                         }
+                        delete [] str; // done with this string
                     } else {
                         next->group[g] = str;   // save group name
                     }
