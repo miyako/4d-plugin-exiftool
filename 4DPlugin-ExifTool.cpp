@@ -224,7 +224,122 @@ static NSTask *createTask() {
     
     return task;
 }
+
+// Runs the bundled exiftool with arguments, optionally writing input to its
+// stdin, and collects stdout/stderr. The pipes are read on background queues
+// while the process runs: a pipe holds 64 KB, so waiting for exit before
+// reading made exiftool block on a full pipe (any output > 64 KB, e.g. a
+// preview image with -b), hit the timeout, get killed, and the output was
+// cut at 65536 bytes. On success both buffers hold the output plus a
+// terminating NUL (the parsers below use strchr/strstr).
+static bool runExifTool(NSArray *arguments,
+                        NSData *input,
+                        CFTimeInterval timeout,
+                        std::vector<char>& stdOutBuf,
+                        std::vector<char>& stdErrBuf,
+                        std::string& error) {
+    
+    NSTask *task = createTask();
+    
+    if(!task) {
+        error = "exiftool not found in the plugin bundle";
+        return false;
+    }
+    
+    [task setArguments:arguments];
+    
+    NSPipe *stdOut = [NSPipe pipe];
+    NSPipe *stdErr = [NSPipe pipe];
+    NSPipe *stdIn = input ? [NSPipe pipe] : nil;
+    
+    [task setStandardOutput:stdOut];
+    [task setStandardError:stdErr];
+    if(stdIn) {
+        [task setStandardInput:stdIn];
+        // exiftool exiting early must not raise SIGPIPE in 4D
+        fcntl([[stdIn fileHandleForWriting] fileDescriptor], F_SETNOSIGPIPE, 1);
+    }
+    
+    // launchAndReturnError: instead of launch, which throws (e.g. exiftool
+    // not executable after an unzip that dropped the mode bits)
+    NSError *launchError = nil;
+    if(![task launchAndReturnError:&launchError]) {
+        NSString *description = launchError ? [launchError localizedDescription] : nil;
+        error = description ? [description UTF8String] : "failed to launch exiftool";
+        [task release];
+        return false;
+    }
+    
+    NSMutableData *stdOutData = [NSMutableData data];
+    NSMutableData *stdErrData = [NSMutableData data];
+    NSFileHandle *stdOutFile = [stdOut fileHandleForReading];
+    NSFileHandle *stdErrFile = [stdErr fileHandleForReading];
+    NSFileHandle *stdInFile = stdIn ? [stdIn fileHandleForWriting] : nil;
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_queue_t queue = dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0);
+    
+    // the *AndReturnError: variants return an error instead of throwing an
+    // NSException, which nothing would catch on a dispatch queue
+    dispatch_group_async(group, queue, ^{
+        @autoreleasepool {
+            NSData *data = [stdOutFile readDataToEndOfFileAndReturnError:nil];
+            if(data) [stdOutData appendData:data];
+        }
+    });
+    dispatch_group_async(group, queue, ^{
+        @autoreleasepool {
+            NSData *data = [stdErrFile readDataToEndOfFileAndReturnError:nil];
+            if(data) [stdErrData appendData:data];
+        }
+    });
+    if(stdInFile) {
+        dispatch_group_async(group, queue, ^{
+            @autoreleasepool {
+                [stdInFile writeData:input error:nil];
+                [stdInFile closeAndReturnError:nil];
+            }
+        });
+    }
+    
+    BOOL exited = waitUntilExitWithTimeout(task, timeout, true, true);
+    
+    // once exiftool is gone its pipe ends are closed and the readers see EOF
+    // (a pending stdin write fails with EPIPE); bound the wait anyway
+    long notDone = dispatch_group_wait(group,
+                                       dispatch_time(DISPATCH_TIME_NOW,
+                                                     (int64_t)(exited ? 10 : 2) * NSEC_PER_SEC));
+    dispatch_release(group);
+    
+    [task release];
+    
+    if(notDone) {
+        // the blocks still own stdOutData/stdErrData; don't read them
+        error = "exiftool did not exit";
+        return false;
+    }
+    
+    const char *outBytes = (const char *)[stdOutData bytes];
+    const char *errBytes = (const char *)[stdErrData bytes];
+    stdOutBuf.assign(outBytes, outBytes + [stdOutData length]);
+    stdOutBuf.push_back('\0');
+    stdErrBuf.assign(errBytes, errBytes + [stdErrData length]);
+    stdErrBuf.push_back('\0');
+    
+    return true;
+}
 #endif
+
+// true if str contains a CR or LF (or, with anyControl, any byte below 0x20)
+static bool has_control_character(const char *str, size_t len, bool anyControl) {
+    
+    for(size_t i = 0; i < len; ++i) {
+        unsigned char c = (unsigned char)str[i];
+        if((c == '\n') || (c == '\r') || (anyControl && (c < 0x20))) return true;
+    }
+    
+    return false;
+}
 
 #pragma mark -
 
@@ -234,16 +349,19 @@ static void getData(PA_ObjectRef tag, TagInfo *i) {
 
         PA_Variable parameters[3];
         
-        parameters[0] = PA_CreateVariable(eVK_Blob);
+        // eVK_Undefined for the blob and the string: PA_CreateVariable(eVK_Blob /
+        // eVK_Unistring) allocates an empty value that the setter overwrites.
+        // The variables own the blob handle and u; PA_ClearVariable frees them
+        // (disposing u as well freed the same buffer twice).
+        parameters[0] = PA_CreateVariable(eVK_Undefined);
         parameters[1] = PA_CreateVariable(eVK_Picture);
-        parameters[2] = PA_CreateVariable(eVK_Unistring);
+        parameters[2] = PA_CreateVariable(eVK_Undefined);
         
         PA_SetBlobVariable(&parameters[0], i->value, i->valueLen);
-        PA_Unistring u = PA_CreateUnistring((PA_Unichar *)"p\0r\0i\0v\0a\0t\0e\0.\0e\0x\0i\0f\0t\0o\0o\0l\0.\0d\0a\0t\0a\0\0\0");
+        PA_Unistring u = PA_CreateUnistring((PA_Unichar *)u"private.exiftool.data");
         PA_SetStringVariable(&parameters[2], &u);
         
         PA_ExecuteCommandByID(/*BLOB TO PICTURE*/682, parameters, 3);
-        PA_DisposeUnistring(&u);
         PA_Picture pict = PA_GetPictureVariable(parameters[1]);
 
         ob_set_s(tag, "name", i->name);
@@ -373,7 +491,8 @@ static void getResult(PA_ObjectRef status,
                       size_t stdErrLen) {
     
 //    std::string stdOutStr(stdOut, stdOutLen);
-    std::string stdErrStr(stdErr, stdErrLen);
+    std::string stdErrStr;
+    if(stdErr && stdErrLen) stdErrStr.assign(stdErr, stdErrLen);
     
 //    ob_set_s(status, L"stdOut", stdOutStr.c_str());
     ob_set_s(status, L"errorMessage", stdErrStr.c_str());
@@ -553,12 +672,53 @@ static TagInfo *ExifTool_GetInfo(char *pt) {
     return infoList;
 }
 
+// Every exit path returns the status object: an exception swallowed by the
+// catch in PluginMain before PA_ReturnObject would leave 4D waiting for a result.
 static void ExifTool_Get_Metadata(PA_PluginParameters params) {
+    
+    PA_ObjectRef status = PA_CreateObject();
+    ob_set_b(status, L"success", false);
+    
+    try {
+#if VERSIONMAC
+        @autoreleasepool {
+            exiftool_get_metadata(params, status);
+        }
+#else
+        exiftool_get_metadata(params, status);
+#endif
+    } catch(...) {
+        ob_set_b(status, L"success", false);
+        ob_set_s(status, L"errorMessage", "unexpected exception");
+    }
+    
+    PA_ReturnObject(params, status);
+}
+
+static void ExifTool_Set_Metadata(PA_PluginParameters params) {
+    
+    PA_ObjectRef status = PA_CreateObject();
+    ob_set_b(status, L"success", false);
+    
+    try {
+#if VERSIONMAC
+        @autoreleasepool {
+            exiftool_set_metadata(params, status);
+        }
+#else
+        exiftool_set_metadata(params, status);
+#endif
+    } catch(...) {
+        ob_set_b(status, L"success", false);
+        ob_set_s(status, L"errorMessage", "unexpected exception");
+    }
+    
+    PA_ReturnObject(params, status);
+}
+
+static void exiftool_get_metadata(PA_PluginParameters params, PA_ObjectRef status) {
 
     PA_Unistring *arg1 = PA_GetStringParameter(params, 1);
-    PA_ObjectRef status = PA_CreateObject();
-    
-    ob_set_b(status, L"success", false);
 
 #if VERSIONMAC
     std::string imagePath;
@@ -690,48 +850,31 @@ static void ExifTool_Get_Metadata(PA_PluginParameters params) {
 #endif
         
 #if VERSIONMAC
-    NSTask *task = createTask();
+    NSString *imagePathString = [NSString stringWithUTF8String:imagePath.c_str()];
+    std::vector<char> stdOutBuf, stdErrBuf;
+    std::string runError;
     
-    if(task) {
-     
-        [task setArguments: @[[NSString stringWithUTF8String:imagePath.c_str()],
-                              @"-b",
-                              @"-php",
-                              @"-l",
-                              @"-G:0:1:2:4",
-                              @"-D",
-                              @"-sep",
-                              @", "]];
+    if(!imagePathString) {
+        ob_set_s(status, L"errorMessage", "invalid file path");
+    }else if(runExifTool(@[imagePathString,
+                           @"-b",
+                           @"-php",
+                           @"-l",
+                           @"-G:0:1:2:4",
+                           @"-D",
+                           @"-sep",
+                           @", "], nil, 3, stdOutBuf, stdErrBuf, runError)) {
         
-        NSPipe *stdOut = [NSPipe pipe];
-        [task setStandardOutput:stdOut];
-        NSFileHandle *stdOutFile = stdOut.fileHandleForReading;
-        
-        NSPipe *stdErr = [NSPipe pipe];
-        [task setStandardError:stdErr];
-        NSFileHandle *stdErrFile = stdErr.fileHandleForReading;
-        
-        [task launch];
-
-        waitUntilExitWithTimeout(task, 3, true, true);
-        
-        [task terminate];
-        
-        [task release];
-        
-        NSData *stdOutFileData = [stdOutFile readDataToEndOfFile];
-        [stdOutFile closeFile];
-        
-        NSData *stdErrFileData = [stdErrFile readDataToEndOfFile];
-        [stdErrFile closeFile];
-        
+        // both buffers are NUL-terminated copies (size() - 1 bytes of output)
         getResult(status,
-                  (const char *)[stdOutFileData bytes],
-                  [stdOutFileData length],
-                  (const char *)[stdErrFileData bytes],
-                  [stdErrFileData length]);
+                  &stdOutBuf[0],
+                  stdOutBuf.size() - 1,
+                  &stdErrBuf[0],
+                  stdErrBuf.size() - 1);
         
-        info = ExifTool_GetInfo((char *)[stdOutFileData bytes]);
+        info = ExifTool_GetInfo(&stdOutBuf[0]);
+    }else{
+        ob_set_s(status, L"errorMessage", runError.c_str());
     }
 #endif
     
@@ -759,8 +902,6 @@ static void ExifTool_Get_Metadata(PA_PluginParameters params) {
         
         ob_set_b(status, L"success", true);
     }
-    
-    PA_ReturnObject(params, status);
 }
 
 static int ExifTool_GetSummary(const char *msg, char *stdOut, size_t len)
@@ -863,17 +1004,23 @@ static bool ob_is_encapsuated_data(PA_ObjectRef obj, const wchar_t *_key, std::v
                 
                 parameters[0] = v;
                 parameters[1] = PA_CreateVariable(eVK_Blob);
-                parameters[2] = PA_CreateVariable(eVK_Unistring);
+                // eVK_Undefined: PA_CreateVariable(eVK_Unistring) allocates an
+                // empty string that PA_SetStringVariable overwrites. The variable
+                // owns u from here on and PA_ClearVariable frees it; disposing u
+                // as well freed the same buffer twice.
+                parameters[2] = PA_CreateVariable(eVK_Undefined);
                 
-                PA_Unistring u = PA_CreateUnistring((PA_Unichar *)"p\0r\0i\0v\0a\0t\0e\0.\0e\0x\0i\0f\0t\0o\0o\0l\0.\0d\0a\0t\0a\0\0\0");
+                PA_Unistring u = PA_CreateUnistring((PA_Unichar *)u"private.exiftool.data");
                 PA_SetStringVariable(&parameters[2], &u);
                 
                 PA_ExecuteCommandByID(/*PICTURE TO BLOB*/692, parameters, 3);
-                PA_DisposeUnistring(&u);
-                void *ptr = NULL;
                 PA_long32 len = PA_GetBlobVariable(parameters[1], 0L);
-                buf.resize(len);
-                PA_GetBlobVariable(parameters[1], &buf[0]);
+                if(len > 0) {
+                    buf.resize(len);
+                    PA_GetBlobVariable(parameters[1], &buf[0]);
+                }else{
+                    buf.clear();
+                }
                 
                 PA_ClearVariable(&parameters[1]);
                 PA_ClearVariable(&parameters[2]);
@@ -897,8 +1044,12 @@ static int ExifTool_WriteInfo(const char *file, TagInfo *info, std::vector<char>
     // 12 extra characters for "-ex\n-sep\n, \n"
     int olen = 12 + 29;
     
-    const int kBlockSize = buf.size();
-    int size = kBlockSize;
+    const int kBlockSize = (int)buf.size();
+    // the path is copied before any size check below; make room for it
+    if (strlen(file) + olen + 2 > buf.size()) {
+        buf.resize(strlen(file) + olen + kBlockSize);
+    }
+    int size = (int)buf.size();
     strcpy(&buf[0], file);
     int pos = (int)strlen(file);
     buf[pos++] = '\n';
@@ -999,12 +1150,9 @@ static int ExifTool_WriteInfo(const char *file, TagInfo *info, std::vector<char>
     return 0;
 }
 
-static void ExifTool_Set_Metadata(PA_PluginParameters params) {
+static void exiftool_set_metadata(PA_PluginParameters params, PA_ObjectRef status) {
 
     PA_Unistring *arg1 = PA_GetStringParameter(params, 1);
-    PA_ObjectRef status = PA_CreateObject();
-    
-    ob_set_b(status, L"success", false);
 
     std::string imagePath;
     
@@ -1017,6 +1165,15 @@ static void ExifTool_Set_Metadata(PA_PluginParameters params) {
 #if VERSIONMAC
         convert_hfs_to_posix(hfs, imagePath);
 #endif
+    }
+    
+    // exiftool reads the path and the "-TAG=VALUE" lines below from stdin as an
+    // argfile, one argument per line: a CR/LF in the path or a tag name would
+    // start a new, caller-controlled exiftool option (-if evaluates Perl code).
+    // Values are escaped by ExifTool_WriteInfo; path and names are rejected.
+    std::string invalidArgument;
+    if(has_control_character(imagePath.c_str(), imagePath.length(), false)) {
+        invalidArgument = "invalid file path";
     }
     
     TagInfo mWriteInfo;
@@ -1035,6 +1192,10 @@ static void ExifTool_Set_Metadata(PA_PluginParameters params) {
                 if(o) {
                     CUTF8String name;
                     if(exiftool_ob_get_text(o, L"name", &name)) {
+                        if(has_control_character((const char *)name.c_str(), name.length(), true)) {
+                            invalidArgument = "invalid tag name";
+                            break;
+                        }
                         CUTF8String value;
                         if(exiftool_ob_get_text(o, L"value", &value)) {
                             ExifTool_SetNewValue(&mWriteInfo, (const char *)name.c_str(), (const char *)value.c_str());
@@ -1048,13 +1209,15 @@ static void ExifTool_Set_Metadata(PA_PluginParameters params) {
                         
                         std::vector<unsigned char>buf(0);
                         if(ob_is_encapsuated_data(o, L"data", buf)) {
-                            ExifTool_SetNewValue(&mWriteInfo, (const char *)name.c_str(), (const char *)&buf[0], buf.size());
+                            ExifTool_SetNewValue(&mWriteInfo, (const char *)name.c_str(), buf.empty() ? NULL : (const char *)&buf[0], (int)buf.size());
                             continue;
                         }
                         
                         double numValue = ob_get_n(o, L"value");
-                        char _numValue[27];
-                        sprintf(_numValue, "%lf", numValue);
+                        // "%lf" of a large double is up to ~320 characters
+                        // (1e300 prints all its integer digits): 27 overflowed
+                        char _numValue[512];
+                        snprintf(_numValue, sizeof(_numValue), "%lf", numValue);
                         name += (const uint8_t *)"#";
                         value = (const uint8_t *)_numValue;
                         ExifTool_SetNewValue(&mWriteInfo, (const char *)name.c_str(), (const char *)value.c_str());
@@ -1071,55 +1234,29 @@ static void ExifTool_Set_Metadata(PA_PluginParameters params) {
     ExifTool_WriteInfo(imagePath.c_str(), &mWriteInfo, buf);
     
 #if VERSIONMAC
-    NSTask *task = createTask();
+    std::vector<char> stdOutBuf, stdErrBuf;
+    std::string runError;
     
-    if(task) {
+    if(!invalidArgument.empty()) {
+        ob_set_s(status, L"errorMessage", invalidArgument.c_str());
+    }else if(runExifTool(@[@"-@", @"-"],
+                         [NSData dataWithBytes:&buf[0] length:buf.size()],
+                         5, stdOutBuf, stdErrBuf, runError)) {
         
-        [task setArguments: @[
-            @"-@",
-            @"-"]];
-        
-        NSPipe *stdOut = [NSPipe pipe];
-        [task setStandardOutput:stdOut];
-        NSFileHandle *stdOutFile = stdOut.fileHandleForReading;
-        
-        NSPipe *stdErr = [NSPipe pipe];
-        [task setStandardError:stdErr];
-        NSFileHandle *stdErrFile = stdErr.fileHandleForReading;
-        
-        NSPipe *stdin = [NSPipe pipe];
-        [task setStandardInput:stdin];
-        NSFileHandle *stdinFile = stdin.fileHandleForWriting;
-        
-        fcntl(stdinFile.fileDescriptor, F_SETNOSIGPIPE, 1);
-        
-        [task launch];
-
-        [stdinFile writeData:[NSData dataWithBytes:&buf[0] length:buf.size()]];
-        [stdinFile closeFile];
-        
-        waitUntilExitWithTimeout(task, 5, true, true);
-        
-        NSData *stdOutFileData = [stdOutFile readDataToEndOfFile];
-        [stdOutFile closeFile];
-        NSData *stdErrFileData = [stdErrFile readDataToEndOfFile];
-        [stdErrFile closeFile];
-        
-        [task release];
-                
-        int nmFilesOK = GetSummary_Success((char *)[stdOutFileData bytes], [stdOutFileData length]);
-        int nmFilesNG = GetSummary_Error((char *)[stdOutFileData bytes], [stdOutFileData length]);
+        int nmFilesOK = GetSummary_Success(&stdOutBuf[0], stdOutBuf.size() - 1);
+        int nmFilesNG = GetSummary_Error(&stdOutBuf[0], stdOutBuf.size() - 1);
         
         if((nmFilesOK == 1) && (nmFilesNG <= 0)) {
             ob_set_b(status, L"success", true);
         }else{
             getResult(status,
-                      (const char *)[stdOutFileData bytes],
-                      [stdOutFileData length],
-                      (const char *)[stdErrFileData bytes],
-                      [stdErrFileData length]);
+                      &stdOutBuf[0],
+                      stdOutBuf.size() - 1,
+                      &stdErrBuf[0],
+                      stdErrBuf.size() - 1);
         }
-    
+    }else{
+        ob_set_s(status, L"errorMessage", runError.c_str());
     }
 #endif
 

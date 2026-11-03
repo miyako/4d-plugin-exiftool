@@ -25,6 +25,10 @@
 static void ExifTool_Get_Metadata(PA_PluginParameters params);
 static void ExifTool_Set_Metadata(PA_PluginParameters params);
 
+static void exiftool_get_metadata(PA_PluginParameters params, PA_ObjectRef status);
+static void exiftool_set_metadata(PA_PluginParameters params, PA_ObjectRef status);
+static bool has_control_character(const char *str, size_t len, bool anyControl);
+
 static void u16_to_u8(CUTF16String& u16, std::string& u8);
 static void u8_to_u16(std::string& u8, CUTF16String& u16);
 
