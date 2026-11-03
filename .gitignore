@@ -1,4 +1,14 @@
-*.DS_Store
-exiftool/build/*
-exiftool/test/userPreferences.*
-exiftool/test/Project/DerivedData/CompiledCode/*
+.DS_Store
+build/
+test/userPreferences.*/
+test/Logs/
+test/Data/Logs/
+test/Project/DerivedData/
+test/Libraries/
+# outputs of the Deployment-only Run Script phase (sign + notarize locally)
+/ExifTool-plugin.dmg
+/ExifTool-plugin.zip
+# rebuilt by the release workflow; MacOS/ also holds the committed exiftool
+# script and its Perl lib, so ignore only the plugin binary
+test/Plugins/ExifTool-plugin.bundle/Contents/MacOS/ExifTool-plugin
+test/Plugins/ExifTool-plugin.bundle/Contents/_CodeSignature/
