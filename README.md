@@ -245,6 +245,7 @@ $status:=ExifTool Set Metadata($file.platformPath; $tags)
 - **A tag without `name` in `tagInfo`.** Its value is empty; see [ExifTool Get Metadata](#exiftool-get-metadata).
 - **`Keywords` written as one item.** List values are not split on `", "`; see [ExifTool Set Metadata](#exiftool-set-metadata).
 - **An element of `tags` without `value` wrote `0`.** Give each element a Text, Null or numeric `value`, or a `data` picture.
+- **Memory grew with every [ExifTool Set Metadata](#exiftool-set-metadata) call in earlier versions.** Each element of `tags`, and each `name`, `value` or `data` it read, was copied and never released, so 4D's memory grew with every tag written. Fixed in this version; see [`tests/ownership`](tests/ownership/README.md).
 
 ---
 
