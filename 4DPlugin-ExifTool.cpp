@@ -953,7 +953,10 @@ static bool exiftool_ob_get_text(PA_ObjectRef obj, const wchar_t *_key, CUTF8Str
         if(PA_HasObjectProperty(obj, &key))
         {
             PA_Variable v = PA_GetObjectProperty(obj, &key);
-            is_text = (PA_GetVariableKind(v) == eVK_Unistring);
+            if(PA_GetLastError() == eER_NoErr) {
+                is_text = (PA_GetVariableKind(v) == eVK_Unistring);
+                PA_ClearVariable(&v);
+            }
         }
         
         PA_DisposeUnistring(&key);
@@ -975,9 +978,13 @@ static bool ob_is_defined_but_null(PA_ObjectRef obj, const wchar_t *_key) {
         if(PA_HasObjectProperty(obj, &key))
         {
             PA_Variable v = PA_GetObjectProperty(obj, &key);
-            if(PA_GetVariableKind(v) == eVK_Null)
+            if(PA_GetLastError() == eER_NoErr)
             {
-                is_defined = true;
+                if(PA_GetVariableKind(v) == eVK_Null)
+                {
+                    is_defined = true;
+                }
+                PA_ClearVariable(&v);
             }
         }
         
@@ -1000,7 +1007,8 @@ static bool ob_is_encapsuated_data(PA_ObjectRef obj, const wchar_t *_key, std::v
         if(PA_HasObjectProperty(obj, &key))
         {
             PA_Variable v = PA_GetObjectProperty(obj, &key);
-            if(PA_GetVariableKind(v) == eVK_Picture)
+            PA_ErrorCode err = PA_GetLastError();
+            if((err == eER_NoErr) && (PA_GetVariableKind(v) == eVK_Picture))
             {
                 PA_Variable parameters[3];
                 
@@ -1029,6 +1037,8 @@ static bool ob_is_encapsuated_data(PA_ObjectRef obj, const wchar_t *_key, std::v
                 
                 is_defined = true;
             }
+            // v is an owned copy of the property (parameters[0] only borrowed it)
+            if(err == eER_NoErr) PA_ClearVariable(&v);
         }
         
         PA_DisposeUnistring(&key);
@@ -1189,6 +1199,13 @@ static void exiftool_set_metadata(PA_PluginParameters params, PA_ObjectRef statu
         for(PA_long32 i = 0; i < count; ++i) {
             
             PA_Variable v = PA_GetCollectionElement(tags, i);
+            if(PA_GetLastError() != eER_NoErr) continue;
+            // v is an owned copy of the element: clear it on every path out of
+            // this iteration (continue/break), after the last use of o below
+            struct element_clear {
+                PA_Variable *v;
+                ~element_clear() { PA_ClearVariable(v); }
+            } clear_v = { &v };
             if(PA_GetVariableKind(v) == eVK_Object) {
                 PA_ObjectRef o = PA_GetObjectVariable(v);
                 if(o) {
